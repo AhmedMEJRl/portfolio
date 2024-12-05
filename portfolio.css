@@ -1,0 +1,173 @@
+/* style.css */
+
+/* Reset et style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #16a8b5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 a {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #24afb4;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #080101;
+}
+
+/* Compétences */
+.competences {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.competence-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.competence-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+.competence-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.competence-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Projets */
+.projets {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.projets h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.projet {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+
+.projet a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #e74c3c;
+   
+}
